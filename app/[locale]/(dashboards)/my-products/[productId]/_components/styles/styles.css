@@ -1,0 +1,37 @@
+.inputField {
+  @apply bg-[#edf5f9] text-[#253439] rounded-lg shadow shadow-sm text-sm md:text-base ;
+}
+
+.sizeBox {
+  @apply bg-[#edf5f9] text-[#253439] rounded-lg shadow text-sm md:text-base;
+}
+
+.shippingCard {
+  @apply bg-[#edf5f9] text-[#253439] rounded-lg shadow text-sm md:text-base;
+}
+.shippingCardPrice {
+  @apply text-[#C1121F] rounded-lg text-sm md:text-base;
+}
+
+.shippingCardActive {
+  @apply bg-[#2b5563] text-white rounded-lg shadow text-sm md:text-base;
+}
+.shippingCardValue {
+    @apply  text-[#CCE0DB] text-sm md:text-base;
+  }
+  .shippingCardText {
+    @apply  text-[#CCE0DB] text-sm md:text-base;
+  }
+  .shippingCardTextActive {
+    @apply  text-[#CCE0DB] text-sm md:text-base;
+  }
+.shippingCardPriceActive {
+  @apply text-[#F4B1AC] rounded-lg text-sm md:text-base;
+}
+.productEditContainer{
+  @apply text-xs tab:text-lg max-w-[240px] rounded-lg mm:max-w-[290px]  ml:max-w-[335px]   tab:max-w-[680px]    md:space-y-8 md:p-8 max-h-[100%] overflow-y-auto lap:max-w-none
+}
+
+.HeaderContainer {
+  @apply flex flex-col tab:flex-row space-y-3 tab:space-y-0 tab:space-s-3 py-3
+}

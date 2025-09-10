@@ -1,0 +1,210 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.links {
+  @apply relative before:content-[''] before:hidden hover:before:block before:transition-all duration-500 before:translate-y-1
+  before:w-1/2 before:h-0.5 before:absolute before:bottom-0 before:bg-[#B29E84] before:left-1/4 transition-all before:duration-500;
+}
+
+.PhoneInputInput {
+  @apply outline-none;
+}
+.package {
+  @apply mx-auto w-[80%] pt-2 md:pt-3 md:w-[90%] h-[38px] md:h-[52px] bg-[#b29e84] rounded-xl shadow text-center text-white text-sm md:text-base font-bold ms:mt-11 mm:mt-0 tab:mt-11 lap:mt-20;
+}
+.packageTitle {
+  @apply text-center text-gray-800 pt-1 md:pt-0 text-base md:text-lg font-bold mb-5 px-[.62rem] md:px-8;
+}
+.monthly {
+  @apply text-center text-gray-800 text-sm md:text-base mt-5 font-bold px-8;
+}
+.productsInfoWrapper {
+  @apply flex flex-col text-center text-gray-950 text-sm md:text-base w-full font-medium px-8 pt-[1rem] md:pt-[2rem];
+}
+.ordersInfoWrapper {
+  @apply flex flex-col text-center text-gray-950 text-sm md:text-base mt-3 md:mt-5 font-medium px-6 mx-auto;
+}
+.subscriptionButton {
+  @apply mb-5 lg:mb-0 cursor-pointer w-[100%] mt-2 md:mt-2;
+}
+.theme-svg {
+  fill: white;
+}
+.productsContainerGrid {
+  @apply grid grid-cols-1 ml:grid-cols-2 tab:grid-cols-4 gap-y-10 gap-x-3 overflow-hidden ;
+}
+/* 
+wallet page sttyles
+*/
+
+.svg-darkmode{
+  @apply  dark:stroke-white dark:stroke-[1.5] dark:fill-white
+}
+.svg-darkmode-v2{
+  @apply  dark:stroke-white
+}
+#svg-darkmode{
+  fill: white;
+  @apply dark:stroke-white
+}
+
+.productsCard{
+  @apply p-3 flex flex-col  gap-y-3 dark:bg-[#2e464f] dark:text-white mt-auto
+}
+
+.shippingInfoInnerContainer {
+@apply flex flex-col space-y-2 pl-2 mt-6 p-3
+}
+.scrollAreaShipping{
+  @apply h-[14rem] ml:h-[10rem] mm:h-[18.3rem] tab:h-[8rem] lap:h-[13rem]
+}
+.shippingCartIcon {
+
+  @apply absolute top-3 k4:top-[1rem]
+}
+
+.shippingCartIconImage{
+  @apply rounded-full cursor-pointer w-[30px] h-[30px] tab:w-auto tab:h-auto
+}
+
+.shippingMethodsTitle{
+  @apply mx-auto bg-[#f0f3f4] text-center pt-10  p-6 text-sm 
+}
+
+.productsOriginalPriceText{
+  @apply text-xs text-[#c2464f] dark:text-red-500 line-through tab:text-[10px] ml:text-[10px] lap:text-[12px]
+}
+
+
+.boldHeader{
+  @apply text-xs tab:text-sm lap:text-lg font-bold
+}
+.pageContainer {
+  @apply flex flex-col tab:flex-1 text-xs tab:text-lg max-w-[245px] rounded-lg mm:max-w-[290px]  ml:max-w-[335px]   tab:max-w-[680px] lap:max-w-none    md:space-y-8 md:p-8 max-h-[100%] lap:justify-center  k4:max-w-[2200px];
+}
+
+.twoPartSection{
+  @apply flex flex-col space-y-3 tab:space-y-0 tab:flex-row tab:justify-between
+}
+/* shipping */
+
+.shippingCard {
+  @apply bg-[#edf5f9] text-[#253439] rounded-lg shadow text-sm md:text-base;
+}
+.shippingCardPrice {
+  @apply text-[#C1121F] rounded-lg text-sm md:text-base;
+}
+
+.shippingCardActive {
+  @apply bg-[#2b5563] text-white rounded-lg shadow text-sm md:text-base;
+}
+.shippingCardValue {
+    @apply  text-[#CCE0DB] text-sm md:text-base;
+  }
+  .shippingCardText {
+    @apply  text-[#CCE0DB] text-sm md:text-base;
+  }
+  .shippingCardTextActive {
+    @apply  text-[#CCE0DB] text-sm md:text-base;
+  }
+.shippingCardPriceActive {
+  @apply text-[#F4B1AC] rounded-lg text-sm md:text-base;
+}
+/* dark theme */
+.bgWD{
+  @apply bg-white dark:bg-[#2e464f]
+}
+
+/* order info fields container */
+
+.orderField {
+  @apply grid grid-cols-6 gap-2 
+}
+.orderFieldInputComponent {
+  @apply col-span-5
+}
+.orderFieldTitleComponent {
+  @apply col-span-1 font-bold text-xs tab:text-sm w-[6rem]
+}
