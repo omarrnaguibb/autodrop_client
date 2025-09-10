@@ -28,16 +28,16 @@ A sleek, responsive frontend for the **AutoDrop Dropshipping Platform** — buil
 
 autodrop_client/
 │
-├── app/          # Next.js App Router
-├── components/   # Reusable UI components
-├── lib/          # Utility/helper functions
-├── store/        # Redux slices & store setup
-├── styles/       # Tailwind CSS config and global styles
-├── public/       # Static assets
-├── tsconfig.json
-├── tailwind.config.js
-├── package.json
-└── README.md
+- ├── app/          # Next.js App Router
+- ├── components/   # Reusable UI components
+- ├── lib/          # Utility/helper functions
+- ├── store/        # Redux slices & store setup
+- ├── styles/       # Tailwind CSS config and global styles
+- ├── public/       # Static assets
+- ├── tsconfig.json
+- ├── tailwind.config.js
+- ├── package.json
+- └── README.md
 
 ## 🚀 Getting Started
 
